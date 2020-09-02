@@ -1,0 +1,27 @@
+.Dog{
+    display:flex;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    flex-direction: column;
+    width: 20%;
+    background: rgba(230, 98, 46, 0.7)
+}
+.Dog-img{
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.Dog-list{
+  list-style:none;
+  list-style-type: "\1F44D";
+  text-align: left;
+  padding: 5px;
+  background: rgba(230, 98, 46, 0.7);
+  border-radius: 10px;
+}

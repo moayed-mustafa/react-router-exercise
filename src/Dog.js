@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams, Route, Redirect } from 'react-router-dom'
+import './styles/Dog.css'
 
 const Dog = ({dogs}) => {
     const { name } = useParams()
@@ -16,12 +17,12 @@ const Dog = ({dogs}) => {
 
                 ) : (
                         dogs.filter(dog => dog.name === name).map(data => (
-                            <div key={data.name} >
-                                <h1 >{data.name}</h1>
-                                <img src={data.src} alt={data.name} />
-                                <ul>
+                            <div className="Dog" key={data.name} >
+                                <h2 >{`Dog Profile: ${data.name}`}</h2>
+                                <img className="Dog-img" src={data.src} alt={data.name} />
+                                <ul className="Dog-list">
                                     {data.facts.map(fact => (
-                                        <li>{fact}</li>
+                                        <li> <b>{fact}</b></li>
                                     ))}
                                 </ul>
 
